@@ -1,0 +1,323 @@
+C:\Temp\Microsoft-fsi-experiences-new\drop\Debug\AnyCPU\Solutions\DocumentIntelligence
+
+1. deploy this 
+C:\Temp\Microsoft-fsi-experiences-new\drop\Debug\AnyCPU\Solutions\DocumentIntelligence\FSIDocumentIntelligenceAnchor.zip
+
+2.C:\Temp\Microsoft-fsi-experiences-new\drop\Debug\AnyCPU\Solutions\DocumentIntelligence\FSIDocumentCommonDataModel.zip - 2 fieldsadded to the contact entity
+
+3.C:\Temp\Microsoft-fsi-experiences-new\drop\Debug\AnyCPU\Solutions\DocumentIntelligence\FSIDocumentIntelligenceDataModel.zip
+
+4.C:\Temp\Microsoft-fsi-experiences-new\drop\Debug\AnyCPU\Solutions\DocumentIntelligence\FSIDocumentIntelligenceCore.zip
+
+5.C:\Temp\Microsoft-fsi-experiences-new\drop\Debug\AnyCPU\Solutions\DocumentIntelligence\FSIDocumentIntelligenceControls.zip
+
+
+2.C:\Temp\Microsoft-fsi-experiences-new\drop\Debug\AnyCPU\Solutions\Onboarding-Essentials
+
+replced from accelarator code 
+
+Onboarding Essentials Base dependecy with msfsi_bank
+      <RootComponent type="1" schemaName="msfsi_bank" behavior="2" />
+ <MissingDependency>
+   <Required type="1" schemaName="msfsi_bank" displayName="Bank" solution="FinancialServicesCommonDataModel (1.4.0.0)" />
+   <Dependent type="1" schemaName="msfsi_bank" displayName="Bank" />
+ </MissingDependency>
+ <MissingDependency>
+   <Required type="1" schemaName="msfsi_bank" displayName="Bank" solution="FinancialServicesCommonDataModel (1.4.0.0)" />
+   <Dependent type="10" schemaName="msfsi_msfsi_applicationasset_bank_msfsi_bank" displayName="msfsi_msfsi_applicationasset_bank_msfsi_bank" parentSchemaName="msfsi_bank" parentDisplayName="Bank" />
+ </MissingDependency>
+ <MissingDependency>
+   <Required type="1" schemaName="msfsi_bank" displayName="Bank" solution="FinancialServicesCommonDataModel (1.4.0.0)" />
+   <Dependent type="10" schemaName="msfsi_msfsi_applicationliability_bank_msfsi_ban" displayName="msfsi_msfsi_applicationliability_bank_msfsi_ban" parentSchemaName="msfsi_bank" parentDisplayName="Bank" />
+ </MissingDependency>
+
+
+removed
+
+<attribute PhysicalName="msfsi_primarymemberhelper">
+  <Type>nvarchar</Type>
+  <Name>msfsi_primarymemberhelper</Name>
+  <LogicalName>msfsi_primarymemberhelper</LogicalName>
+  <RequiredLevel>none</RequiredLevel>
+  <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+  <ImeMode>auto</ImeMode>
+  <ValidForUpdateApi>1</ValidForUpdateApi>
+  <ValidForReadApi>1</ValidForReadApi>
+  <ValidForCreateApi>1</ValidForCreateApi>
+  <IsCustomField>1</IsCustomField>
+  <IsAuditEnabled>0</IsAuditEnabled>
+  <IsSecured>0</IsSecured>
+  <IntroducedVersion>1.3.0.0</IntroducedVersion>
+  <IsCustomizable>1</IsCustomizable>
+  <IsRenameable>1</IsRenameable>
+  <CanModifySearchSettings>1</CanModifySearchSettings>
+  <CanModifyRequirementLevelSettings>0</CanModifyRequirementLevelSettings>
+  <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+  <SourceType>1</SourceType>
+  <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+  <IsSortableEnabled>0</IsSortableEnabled>
+  <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+  <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+  <IsDataSourceSecret>0</IsDataSourceSecret>
+  <AutoNumberFormat></AutoNumberFormat>
+  <IsSearchable>0</IsSearchable>
+  <IsFilterable>0</IsFilterable>
+  <IsRetrievable>0</IsRetrievable>
+  <IsLocalizable>0</IsLocalizable>
+  <Format>text</Format>
+  <MaxLength>4000</MaxLength>
+  <Length>8000</Length>
+  <displaynames>
+    <displayname description="Primary member helper" languagecode="1033" />
+  </displaynames>
+  <Descriptions>
+    <Description description="A calculated field helping determine if a related party contract is the primary member of the application." languagecode="1033" />
+  </Descriptions>
+  <FormulaDefinitionFileName>/Formulas/msfsi_application-msfsi_primarymemberhelper.xaml</FormulaDefinitionFileName>
+</attribute>
+        
+     
+ <attribute PhysicalName="msfsi_balancedisplayvalue">
+   <Type>money</Type>
+   <Name>msfsi_balancedisplayvalue</Name>
+   <LogicalName>msfsi_balancedisplayvalue</LogicalName>
+   <RequiredLevel>none</RequiredLevel>
+   <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+   <ImeMode>auto</ImeMode>
+   <ValidForUpdateApi>1</ValidForUpdateApi>
+   <ValidForReadApi>1</ValidForReadApi>
+   <ValidForCreateApi>1</ValidForCreateApi>
+   <IsCustomField>1</IsCustomField>
+   <IsAuditEnabled>0</IsAuditEnabled>
+   <IsSecured>0</IsSecured>
+   <IntroducedVersion>1.4.0.0</IntroducedVersion>
+   <IsCustomizable>1</IsCustomizable>
+   <IsRenameable>1</IsRenameable>
+   <CanModifySearchSettings>1</CanModifySearchSettings>
+   <CanModifyRequirementLevelSettings>0</CanModifyRequirementLevelSettings>
+   <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+   <SourceType>1</SourceType>
+   <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+   <IsSortableEnabled>0</IsSortableEnabled>
+   <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+   <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+   <IsDataSourceSecret>0</IsDataSourceSecret>
+   <AutoNumberFormat></AutoNumberFormat>
+   <IsSearchable>0</IsSearchable>
+   <IsFilterable>0</IsFilterable>
+   <IsRetrievable>0</IsRetrievable>
+   <IsLocalizable>0</IsLocalizable>
+   <MinValue>-922337203685477</MinValue>
+   <MaxValue>922337203685477</MaxValue>
+   <Accuracy>2</Accuracy>
+   <AccuracySource>2</AccuracySource>
+   <displaynames>
+     <displayname description="Balance display value" languagecode="1033" />
+   </displaynames>
+   <Descriptions>
+     <Description description="Display value shows the balance of the liability as a positive value. That is, a liability with an accounting value of -500 will appear as 500." languagecode="1033" />
+   </Descriptions>
+   <FormulaDefinitionFileName>/Formulas/msfsi_applicationliability-msfsi_balancedisplayvalue.xaml</FormulaDefinitionFileName>
+ </attribute>
+
+related partycontract
+
+ <attribute PhysicalName="msfsi_creditscore">
+   <Type>int</Type>
+   <Name>msfsi_creditscore</Name>
+   <LogicalName>msfsi_creditscore</LogicalName>
+   <RequiredLevel>none</RequiredLevel>
+   <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+   <ImeMode>auto</ImeMode>
+   <ValidForUpdateApi>0</ValidForUpdateApi>
+   <ValidForReadApi>1</ValidForReadApi>
+   <ValidForCreateApi>0</ValidForCreateApi>
+   <IsCustomField>1</IsCustomField>
+   <IsAuditEnabled>0</IsAuditEnabled>
+   <IsSecured>0</IsSecured>
+   <IntroducedVersion>1.4.0.0</IntroducedVersion>
+   <IsCustomizable>1</IsCustomizable>
+   <IsRenameable>1</IsRenameable>
+   <CanModifySearchSettings>1</CanModifySearchSettings>
+   <CanModifyRequirementLevelSettings>1</CanModifyRequirementLevelSettings>
+   <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+   <SourceType>1</SourceType>
+   <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+   <IsSortableEnabled>0</IsSortableEnabled>
+   <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+   <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+   <IsDataSourceSecret>0</IsDataSourceSecret>
+   <AutoNumberFormat></AutoNumberFormat>
+   <IsSearchable>0</IsSearchable>
+   <IsFilterable>0</IsFilterable>
+   <IsRetrievable>0</IsRetrievable>
+   <IsLocalizable>0</IsLocalizable>
+   <Format>none</Format>
+   <MinValue>-2147483648</MinValue>
+   <MaxValue>2147483647</MaxValue>
+   <displaynames>
+     <displayname description="Credit score" languagecode="1033" />
+   </displaynames>
+   <Descriptions>
+     <Description description="The credeit score associated with this application contact." languagecode="1033" />
+   </Descriptions>
+   <FormulaDefinitionFileName>/Formulas/msfsi_relatedpartycontract-msfsi_creditscore.xaml</FormulaDefinitionFileName>
+ </attribute>
+
+     <attribute PhysicalName="msfsi_kycassessmentdate">
+       <Type>datetime</Type>
+       <Name>msfsi_kycassessmentdate</Name>
+       <LogicalName>msfsi_kycassessmentdate</LogicalName>
+       <RequiredLevel>none</RequiredLevel>
+       <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+       <ImeMode>auto</ImeMode>
+       <ValidForUpdateApi>0</ValidForUpdateApi>
+       <ValidForReadApi>1</ValidForReadApi>
+       <ValidForCreateApi>0</ValidForCreateApi>
+       <IsCustomField>1</IsCustomField>
+       <IsAuditEnabled>0</IsAuditEnabled>
+       <IsSecured>0</IsSecured>
+       <IntroducedVersion>1.4.0.0</IntroducedVersion>
+       <IsCustomizable>1</IsCustomizable>
+       <IsRenameable>1</IsRenameable>
+       <CanModifySearchSettings>1</CanModifySearchSettings>
+       <CanModifyRequirementLevelSettings>0</CanModifyRequirementLevelSettings>
+       <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+       <SourceType>1</SourceType>
+       <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+       <IsSortableEnabled>0</IsSortableEnabled>
+       <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+       <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+       <IsDataSourceSecret>0</IsDataSourceSecret>
+       <AutoNumberFormat></AutoNumberFormat>
+       <IsSearchable>0</IsSearchable>
+       <IsFilterable>0</IsFilterable>
+       <IsRetrievable>0</IsRetrievable>
+       <IsLocalizable>0</IsLocalizable>
+       <Format>datetime</Format>
+       <CanChangeDateTimeBehavior>1</CanChangeDateTimeBehavior>
+       <Behavior>1</Behavior>
+       <displaynames>
+         <displayname description="KYC assessment date" languagecode="1033" />
+       </displaynames>
+       <Descriptions>
+         <Description description="The Know Your Customer assessment date associated with this application contact." languagecode="1033" />
+       </Descriptions>
+       <FormulaDefinitionFileName>/Formulas/msfsi_relatedpartycontract-msfsi_kycassessmentdate.xaml</FormulaDefinitionFileName>
+     </attribute>
+
+   <attribute PhysicalName="msfsi_kycscore">
+     <Type>int</Type>
+     <Name>msfsi_kycscore</Name>
+     <LogicalName>msfsi_kycscore</LogicalName>
+     <RequiredLevel>none</RequiredLevel>
+     <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+     <ImeMode>auto</ImeMode>
+     <ValidForUpdateApi>0</ValidForUpdateApi>
+     <ValidForReadApi>1</ValidForReadApi>
+     <ValidForCreateApi>0</ValidForCreateApi>
+     <IsCustomField>1</IsCustomField>
+     <IsAuditEnabled>0</IsAuditEnabled>
+     <IsSecured>0</IsSecured>
+     <IntroducedVersion>1.4.0.0</IntroducedVersion>
+     <IsCustomizable>1</IsCustomizable>
+     <IsRenameable>1</IsRenameable>
+     <CanModifySearchSettings>1</CanModifySearchSettings>
+     <CanModifyRequirementLevelSettings>0</CanModifyRequirementLevelSettings>
+     <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+     <SourceType>1</SourceType>
+     <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+     <IsSortableEnabled>0</IsSortableEnabled>
+     <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+     <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+     <IsDataSourceSecret>0</IsDataSourceSecret>
+     <AutoNumberFormat></AutoNumberFormat>
+     <IsSearchable>0</IsSearchable>
+     <IsFilterable>0</IsFilterable>
+     <IsRetrievable>0</IsRetrievable>
+     <IsLocalizable>0</IsLocalizable>
+     <Format></Format>
+     <MinValue>-2147483648</MinValue>
+     <MaxValue>2147483647</MaxValue>
+     <displaynames>
+       <displayname description="KYC score" languagecode="1033" />
+     </displaynames>
+     <Descriptions>
+       <Description description="The Know Your Customer score associated with this application contact." languagecode="1033" />
+     </Descriptions>
+     <FormulaDefinitionFileName>/Formulas/msfsi_relatedpartycontract-msfsi_kycscore.xaml</FormulaDefinitionFileName>
+   </attribute>
+
+ <attribute PhysicalName="msfsi_kycstatus">
+   <Type>picklist</Type>
+   <Name>msfsi_kycstatus</Name>
+   <LogicalName>msfsi_kycstatus</LogicalName>
+   <RequiredLevel>none</RequiredLevel>
+   <DisplayMask>ValidForAdvancedFind|ValidForForm|ValidForGrid</DisplayMask>
+   <ImeMode>auto</ImeMode>
+   <ValidForUpdateApi>0</ValidForUpdateApi>
+   <ValidForReadApi>1</ValidForReadApi>
+   <ValidForCreateApi>0</ValidForCreateApi>
+   <IsCustomField>1</IsCustomField>
+   <IsAuditEnabled>0</IsAuditEnabled>
+   <IsSecured>0</IsSecured>
+   <IntroducedVersion>1.4.0.0</IntroducedVersion>
+   <IsCustomizable>1</IsCustomizable>
+   <IsRenameable>1</IsRenameable>
+   <CanModifySearchSettings>1</CanModifySearchSettings>
+   <CanModifyRequirementLevelSettings>0</CanModifyRequirementLevelSettings>
+   <CanModifyAdditionalSettings>1</CanModifyAdditionalSettings>
+   <SourceType>1</SourceType>
+   <IsGlobalFilterEnabled>0</IsGlobalFilterEnabled>
+   <IsSortableEnabled>0</IsSortableEnabled>
+   <CanModifyGlobalFilterSettings>1</CanModifyGlobalFilterSettings>
+   <CanModifyIsSortableSettings>1</CanModifyIsSortableSettings>
+   <IsDataSourceSecret>0</IsDataSourceSecret>
+   <AutoNumberFormat></AutoNumberFormat>
+   <IsSearchable>0</IsSearchable>
+   <IsFilterable>0</IsFilterable>
+   <IsRetrievable>0</IsRetrievable>
+   <IsLocalizable>0</IsLocalizable>
+   <AppDefaultValue>104800000</AppDefaultValue>
+   <OptionSetName>msfsi_kyc_checkstatus</OptionSetName>
+   <displaynames>
+     <displayname description="KYC status" languagecode="1033" />
+   </displaynames>
+   <Descriptions>
+     <Description description="The Know Your Customer status associated with this application contact." languagecode="1033" />
+   </Descriptions>
+   <FormulaDefinitionFileName>/Formulas/msfsi_relatedpartycontract-msfsi_kycstatus.xaml</FormulaDefinitionFileName>
+ </attribute>
+
+
+Solution "Onboarding Essentials Base" failed to import: Error while importing workflow {fdca70b7-b4e8-ed11-a7c6-6045bd006aa7} type PortableBusinessLogic name Lock primary applicant: Error generating UiData for workflow:Lock primary applicant, id:fdca70b7-b4e8-ed11-a7c6-6045bd006aa7
+
+
+
+removed flow lock primary applicant
+      <RootComponent type="29" id="{fdca70b7-b4e8-ed11-a7c6-6045bd006aa7}" behavior="0" />
+
+
+      <RootComponent type="29" id="{593a5d31-0fc4-ed11-83ff-000d3a1ba984}" behavior="0" />
+
+3 flows removed 
+
+Solution "Onboarding Essentials Base" imported successfully with warnings: Flow client error returned with status code "BadRequest" and details "{"error":{"code":"InvalidOpenApiFlow","message":"Flow save failed with code 'MultipleErrorsOccurred' and message 'The dynamic operation request to API 'commondataserviceforapps' operation 'GetMetadataForBoundActionInput' failed with status code 'BadRequest'. This may indicate invalid input parameters. Error response: {\"error\":{\"code\":\"BadRequest\",\"message\":\"Bound action 'Microsoft.Dynamics.CRM.msfsi_Setapplicationprocess' is not found in the Organization or is not included in the Solution being imported.\"}};The dynamic operation request to API 'commondataserviceforapps' operation 'GetMetadataForBoundActionResponse' failed with status code 'BadRequest'. This may indicate invalid input parameters. Error response: {\"error\":{\"code\":\"BadRequest\",\"message\":\"Bound action 'Microsoft.Dynamics.CRM.msfsi_Setapplicationprocess' is not found in the Organization or is not included in the Solution being imported.\"}}'."}}".
+
+Task
+----
+
+Branch (msfsi_Contact_Branch_msfsi_branch)
+
+
+ <RootComponent type="29" id="{40e432b7-8aa0-ed11-aad1-000d3a9cab0d}" behavior="0" />
+ <RootComponent type="29" id="{4bf0e3da-a6fe-ec11-82e5-0022482449e2}" behavior="0" />
+ <RootComponent type="29" id="{5bb2673f-4054-ed11-bba2-000d3a37dd84}" behavior="0" />
+ <RootComponent type="29" id="{76a53548-8aa0-ed11-aad1-000d3a9cab0d}" behavior="0" />
+ <RootComponent type="29" id="{b198bc79-a0fe-ec11-82e5-0022482440bd}" behavior="0" />
+
+
+
+
+
+iport data from C:\Temp\Microsoft-fsi-experiences-new\Modules\Loan-Onboarding\Loan-Onboarding.Package\Loan-Onboarding using cmt tool by zipping conent 
